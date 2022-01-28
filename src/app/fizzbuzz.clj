@@ -10,10 +10,12 @@
 
 (defn fizzbuzz [number]
   (println "Result: "
-           (cond
-             (and (divided-by? number 3) (divided-by? number 5)) "fizzbuzz"
+           (cond (and (divided-by? number 3)
+                      (divided-by? number 5)) "fizzbuzz"
              (divided-by? number 3) "fizz"
              (divided-by? number 5) "buzz"
              :else number)))
 
-(fizzbuzz 15)
+(def one-to-fifteen (range 1 16))
+
+(map fizzbuzz one-to-fifteen)
