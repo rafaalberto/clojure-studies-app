@@ -1,6 +1,6 @@
 (ns app.list)
 
-(defn display [number]
-  (println "number: " number))
+(defn display-list [number]
+  (println "Display number: " number))
 
-(map display (range 1 11))
+(map display-list (range 1 11))
