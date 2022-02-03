@@ -9,8 +9,15 @@
 (defn get-values [transactions]
   (:value transactions))
 
+(defn deposit? [transactions]
+  (= (:type transactions) "Deposit"))
+
 (defn withdraw? [transactions]
   (= (:type transactions) "Withdraw"))
 
-(println "Withdraw Amount: "
-         (reduce + (map get-values (filter withdraw? transactions))))
+(def deposit-total (reduce + (map get-values (filter deposit? transactions))))
+(def withdraw-total (reduce + (map get-values (filter withdraw? transactions))))
+
+(println "Deposit (+): " deposit-total)
+(println "Withdraw (-): " withdraw-total)
+(println "Balance: " (- deposit-total withdraw-total))
