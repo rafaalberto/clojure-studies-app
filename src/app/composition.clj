@@ -25,8 +25,14 @@
       :amount (* (:price dollar) (:amount transactions))
       :currency (:symbol dollar))))
 
-(defn transactions-report-in-dollar [transactions]
-  (-> (transactions-in-dollar transactions)
-      (transactions-report)))
+;with composition
+(def report-in-dollar (comp transactions-report transactions-in-dollar))
 
-(println (map transactions-report-in-dollar transactions))
+(println (map report-in-dollar transactions))
+
+;without composition
+;(defn transactions-report-in-dollar [transactions]
+;  (-> (transactions-in-dollar transactions)
+;      (transactions-report)))
+
+;(println (map transactions-report-in-dollar transactions))
