@@ -30,7 +30,13 @@
 
 (println (map report-in-dollar transactions))
 
-;without composition
+;without composition - option 1
+;(defn transactions-report-in-dollar [transactions]
+;  (transactions-report (transactions-in-dollar transactions)))
+;
+;(println (map transactions-report-in-dollar transactions))
+
+;without composition - option 2
 ;(defn transactions-report-in-dollar [transactions]
 ;  (-> (transactions-in-dollar transactions)
 ;      (transactions-report)))
