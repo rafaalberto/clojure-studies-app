@@ -1,10 +1,10 @@
 (ns app.composition)
 
 (def transactions
-  [{:type "Deposit" :amount 500.00 :date "2022-01-01" :currency "$"}
+  [{:type "Deposit" :amount 500.00 :date "2022-01-01" :currency "R$"}
    {:type "Withdraw" :amount 300.00 :date "2022-01-06"}
-   {:type "Withdraw" :amount 50.00 :date "2022-01-15" :currency "$"}
-   {:type "Deposit" :amount 1000.00 :date "2022-01-19" :currency "$"}])
+   {:type "Withdraw" :amount 50.00 :date "2022-01-15" :currency "R$"}
+   {:type "Deposit" :amount 1000.00 :date "2022-01-19" :currency "R$"}])
 
 (defn amount-symbol [transactions]
   (let [currency (:currency transactions "$")
@@ -17,10 +17,12 @@
   (str (:date transactions) " => "
        (amount-symbol transactions)))
 
-(defn transactions-in-real [transactions]
-  (assoc transactions
-    :amount (* 5.50 (:amount transactions))
-    :currency "R$"))
+(def prices {:dollar {:price 5.50 :symbol "$"}})
 
-(println (date-value (first transactions)))
-(println (transactions-in-real (first transactions)))
+(defn transactions-in-dollar [transactions]
+  (let [dollar (:dollar prices)]
+    (assoc transactions
+      :amount (* (:price dollar) (:amount transactions))
+      :currency (:symbol dollar))))
+
+(println (date-value (transactions-in-dollar (first transactions))))
