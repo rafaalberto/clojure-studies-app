@@ -17,7 +17,9 @@
   (str (:date transactions) " => "
        (amount-report transactions)))
 
-(def currencies {:dollar {:price 5.44M :symbol "$"}})
+(def currencies
+  {:dollar {:price 5.44M :symbol "$"}
+   :euro   {:price 6.00M :symbol "€"}})
 
 (defn transactions-in-dollar [transactions]
   (let [{{price :price symbol :symbol} :dollar} currencies]
@@ -25,20 +27,14 @@
       :amount (* price (:amount transactions))
       :currency symbol)))
 
-;with composition
+(defn transactions-by-currency [currency transactions]
+  (let [{{price :price symbol :symbol} currency} currencies]
+    (assoc transactions
+      :amount (* price (:amount transactions))
+      :currency symbol)))
+
 (def report-in-dollar (comp transactions-report transactions-in-dollar))
 
 (println (map report-in-dollar transactions))
 
-;without composition - option 1
-;(defn transactions-report-in-dollar [transactions]
-;  (transactions-report (transactions-in-dollar transactions)))
-;
-;(println (map transactions-report-in-dollar transactions))
-
-;without composition - option 2
-;(defn transactions-report-in-dollar [transactions]
-;  (-> (transactions-in-dollar transactions)
-;      (transactions-report)))
-
-;(println (map transactions-report-in-dollar transactions))
+(println (transactions-by-currency :euro (first transactions)))
