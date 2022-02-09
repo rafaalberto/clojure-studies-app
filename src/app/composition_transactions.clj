@@ -20,10 +20,10 @@
 (def currencies {:dollar {:price 5.44M :symbol "$"}})
 
 (defn transactions-in-dollar [transactions]
-  (let [dollar (:dollar currencies)]
+  (let [{{price :price symbol :symbol} :dollar} currencies]
     (assoc transactions
-      :amount (* (:price dollar) (:amount transactions))
-      :currency (:symbol dollar))))
+      :amount (* price (:amount transactions))
+      :currency symbol)))
 
 ;with composition
 (def report-in-dollar (comp transactions-report transactions-in-dollar))
