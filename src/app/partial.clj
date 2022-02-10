@@ -1,9 +1,7 @@
 (ns app.partial)
 
-(defn print-person [name last-name]
-  (str "You are " name " " last-name "!"))
+(defn email-struct [username domain]
+  (str username "@" domain))
 
-(println (print-person "Rafael" "Alberto"))
-
-(def build-name (partial print-person "Rafael"))
-(println (build-name "Alberto"))
+(def build-email (partial email-struct "rafael.alberto1703"))
+(println "Email:" (build-email "gmail.com"))

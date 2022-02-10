@@ -8,10 +8,6 @@
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 ;
 project.clj,5/7/57ca00cf1f5956461c3a9003fcb7b0a3de2c6a31
-O
-src/app/anonymous_functions.clj,8/1/8148d5b01880ea7144470d211e853c2ea157d244
-A
-src/app/grade.clj,2/9/29e9d7de1d79813d4bf685998e5f7443d8dd0e6d
 @
 src/app/list.clj,b/3/b3bbb7f9eba230c54fc9e343b669535fbc5fc7b1
 ?
