@@ -38,3 +38,7 @@
 (println (map report-in-dollar transactions))
 
 (println (transactions-by-currency :euro (first transactions)))
+
+(def transactions-euro (partial transactions-by-currency :euro))
+
+(println (transactions-euro (first transactions)))
