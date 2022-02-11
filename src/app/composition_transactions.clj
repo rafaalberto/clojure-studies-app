@@ -33,12 +33,16 @@
       :amount (* price (:amount transactions))
       :currency symbol)))
 
-(def report-in-dollar (comp transactions-report transactions-in-dollar))
+;comp
+;(def report-in-dollar (comp transactions-report transactions-in-dollar))
+;(println (map report-in-dollar transactions))
 
-(println (map report-in-dollar transactions))
+;option 1
+;(println (transactions-by-currency :euro (first transactions)))
 
-(println (transactions-by-currency :euro (first transactions)))
-
+;option 2
 (def transactions-euro (partial transactions-by-currency :euro))
+;(println (transactions-euro (first transactions)))
 
-(println (transactions-euro (first transactions)))
+(def join-all (partial clojure.string/join ";; "))
+(println (join-all (map transactions-euro transactions)))
