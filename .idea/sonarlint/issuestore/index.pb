@@ -12,7 +12,5 @@
 src/app/list.clj,b/3/b3bbb7f9eba230c54fc9e343b669535fbc5fc7b1
 I
 src/app/destructuring.clj,f/1/f1d122edf52d0f2beba2b7dbc989411f2c50e9d7
-A
-src/app/grade.clj,2/9/29e9d7de1d79813d4bf685998e5f7443d8dd0e6d
 D
 src/app/fizzbuzz.clj,8/5/851db4c0bcf4a8f5f82f4ee803ddc3505f954371
