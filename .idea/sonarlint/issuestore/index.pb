@@ -14,3 +14,13 @@ I
 src/app/destructuring.clj,f/1/f1d122edf52d0f2beba2b7dbc989411f2c50e9d7
 D
 src/app/fizzbuzz.clj,8/5/851db4c0bcf4a8f5f82f4ee803ddc3505f954371
+G
+src/app/report_card.clj,3/f/3fc25536437195d5976035cc8fef65dbc0caaa5c
+A
+src/app/grade.clj,2/9/29e9d7de1d79813d4bf685998e5f7443d8dd0e6d
+F
+src/app/mutability.clj,d/3/d393887561ee7bfa7b36086b68d71a632948115a
+H
+src/app/immutability.clj,a/3/a3285e698c3ca810b6715e967fa4e94699551be7
+T
+$src/app/composition_transactions.clj,f/d/fd4ae3ee73f2f014cecdba315931618f02e7ae63

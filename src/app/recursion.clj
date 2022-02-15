@@ -9,12 +9,16 @@
 (defn is-withdraw? [transactions]
   (= (:type transactions) "withdraw"))
 
+(defn calculate-value [balance transaction]
+  (let [value (:value transaction)]
+    (if (is-withdraw? transaction)
+      (- balance value)
+      (+ balance value))))
+
 (defn calculate-balance [balance transactions]
   (if-let [current-transaction (first transactions)]
-    (calculate-balance (if (is-withdraw? current-transaction)
-                         (- balance (:value current-transaction))
-                         (+ balance (:value current-transaction)))
+    (calculate-balance (calculate-value balance current-transaction)
                        (rest transactions))
     balance))
 
-(println "Balance: " (calculate-balance 0 (take 4 transactions)))
+(println "Balance: " (calculate-balance 0 (take 2 transactions)))
