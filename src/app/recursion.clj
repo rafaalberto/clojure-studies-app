@@ -1,10 +1,10 @@
 (ns app.recursion)
 
 (def transactions
-  [{:value 120.00 :type "deposit"}
-   {:value 50.00 :type "withdraw"}
-   {:value 30.00 :type "deposit"}
-   {:value 40.00 :type "withdraw"}])
+  [{:value 120.00M :type "deposit"}
+   {:value 50.00M :type "withdraw"}
+   {:value 30.00M :type "deposit"}
+   {:value 40.00M :type "withdraw"}])
 
 (defn is-withdraw? [transactions]
   (= (:type transactions) "withdraw"))
