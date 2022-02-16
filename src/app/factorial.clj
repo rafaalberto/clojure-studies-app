@@ -6,6 +6,7 @@
     number))
 
 (def factorial-number 5)
-(def result (str "Factorial of " factorial-number " is " (factorial factorial-number)))
+(def result (str "Factorial of " factorial-number
+                 " is " (factorial factorial-number)))
 (println result)
 
