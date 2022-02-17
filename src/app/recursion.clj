@@ -15,15 +15,17 @@
       (- balance value)
       (+ balance value))))
 
-(defn calculate-balance [balance transactions]
-  (if-let [current-transaction (first transactions)]
-    (do
-      (prn "Current balance: " balance)
-      (prn "Transactions left: " (count (rest transactions)))
-      (calculate-balance (calculate-value balance current-transaction)
-                         (rest transactions)))
-    (do
-      (prn "Final balance: " balance)
-      balance)))
+(defn calculate-balance
+  ([transactions]
+   (calculate-balance 0 transactions))
+  ([balance transactions]
+   (if-let [current-transaction (first transactions)]
+     (calculate-balance (calculate-value balance current-transaction)
+                        (rest transactions))
+     balance)))
 
-(println "Balance: " (calculate-balance 0 (take 2 transactions)))
+;option 1 - arity overloading
+(println "Balance: " (calculate-balance transactions))
+
+;option 2 - arity overloading
+;(println "Balance: " (calculate-balance 0 transactions))
