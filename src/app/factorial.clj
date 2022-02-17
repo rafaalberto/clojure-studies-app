@@ -1,6 +1,7 @@
 (ns app.factorial)
 
 (defn factorial [number]
+  (prn "Factorial to calculate: " number)
   (if (> number 1)
     (* number (factorial (- number 1)))
     number))
