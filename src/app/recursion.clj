@@ -17,8 +17,13 @@
 
 (defn calculate-balance [balance transactions]
   (if-let [current-transaction (first transactions)]
-    (calculate-balance (calculate-value balance current-transaction)
-                       (rest transactions))
-    balance))
+    (do
+      (prn "Current balance: " balance)
+      (prn "Transactions left: " (count (rest transactions)))
+      (calculate-balance (calculate-value balance current-transaction)
+                         (rest transactions)))
+    (do
+      (prn "Final balance: " balance)
+      balance)))
 
 (println "Balance: " (calculate-balance 0 (take 2 transactions)))

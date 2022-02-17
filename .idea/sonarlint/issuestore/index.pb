@@ -18,5 +18,3 @@ G
 src/app/report_card.clj,3/f/3fc25536437195d5976035cc8fef65dbc0caaa5c
 A
 src/app/grade.clj,2/9/29e9d7de1d79813d4bf685998e5f7443d8dd0e6d
-T
-$src/app/composition_transactions.clj,f/d/fd4ae3ee73f2f014cecdba315931618f02e7ae63
