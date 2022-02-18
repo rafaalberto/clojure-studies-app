@@ -9,20 +9,20 @@
 (defn is-withdraw? [transactions]
   (= (:type transactions) "withdraw"))
 
-(defn calculate-value [balance transaction]
+(defn calculate-value [total transaction]
   (let [value (:value transaction)]
     (if (is-withdraw? transaction)
-      (- balance value)
-      (+ balance value))))
+      (- total value)
+      (+ total value))))
 
 (defn calculate-balance
   ([transactions]
    (calculate-balance 0 transactions))
-  ([balance transactions]
+  ([total transactions]
    (if-let [current-transaction (first transactions)]
-     (recur (calculate-value balance current-transaction)
+     (recur (calculate-value total current-transaction)
                         (rest transactions))
-     balance)))
+     total)))
 
 ;arity overloading
 (println "Balance: " (calculate-balance transactions))
