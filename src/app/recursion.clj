@@ -30,5 +30,9 @@
 (defn add-transactions [value]
   {:value value})
 
+;using recursion
 (def new-transactions (map add-transactions (range 100000)))
 (println "Balance: " (calculate-balance new-transactions))
+
+;other way - using reduce
+(println "Balance: " (reduce calculate-value 0 new-transactions))
