@@ -20,12 +20,15 @@
    (calculate-balance 0 transactions))
   ([balance transactions]
    (if-let [current-transaction (first transactions)]
-     (calculate-balance (calculate-value balance current-transaction)
+     (recur (calculate-value balance current-transaction)
                         (rest transactions))
      balance)))
 
-;option 1 - arity overloading
+;arity overloading
 (println "Balance: " (calculate-balance transactions))
 
-;option 2 - arity overloading
-;(println "Balance: " (calculate-balance 0 transactions))
+(defn add-transactions [value]
+  {:value value})
+
+(def new-transactions (map add-transactions (range 100000)))
+(println "Balance: " (calculate-balance new-transactions))
