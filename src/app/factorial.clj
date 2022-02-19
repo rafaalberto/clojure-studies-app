@@ -11,7 +11,6 @@
                  " is " (factorial factorial-number)))
 (println result)
 
-
 (defn recur-factorial
   ([number]
    (recur-factorial 1 number))
