@@ -10,6 +10,7 @@
   (prn "calling countries")
   (= (:continent countries) "Europe"))
 
+;laziness sequence
 (def europeans (filter is-from-europe? countries))
 
 (println europeans)
