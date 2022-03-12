@@ -16,3 +16,13 @@
 ;thread-last
 (->> (map print-name names)
      (println))
+
+;thread-first vs thread-last
+
+(-> (str "Hi, ")
+    (str "Rafael!")
+    (println))
+
+(->> (str "Rafael")
+     (str "Hi, ")
+     (println))
