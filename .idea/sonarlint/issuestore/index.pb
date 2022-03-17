@@ -11,8 +11,6 @@ D
 src/app/laziness.clj,2/1/21efa7521da0342f332f89a16e52afe1c56a5e83
 D
 src/app/lazy_seq.clj,b/e/be9554e1d66a0ecab0bad023bcdbd3d035eb184c
-I
-src/app/destructuring.clj,f/1/f1d122edf52d0f2beba2b7dbc989411f2c50e9d7
 J
 src/app/map_inside_map.clj,5/c/5c6a793cfed262e498cbba85040e762dfccdafdb
 @
@@ -27,3 +25,23 @@ F
 src/app/mutability.clj,d/3/d393887561ee7bfa7b36086b68d71a632948115a
 Q
 !src/app/recur_overload_review.clj,d/9/d9325bc9b264d028c43ed050c9a5ef8bf9e16f6b
+E
+src/app/recursion.clj,d/e/de3dfb548eb1da4113270e1059537ea72dd12f46
+T
+$src/app/composition_transactions.clj,f/d/fd4ae3ee73f2f014cecdba315931618f02e7ae63
+G
+src/app/composition.clj,0/7/076e0151c8ba89d62eb9c8013be8fa07dc701fa9
+M
+src/app/arity_overloading.clj,6/a/6ad128e49b0c72774ffdb50ffc71a89aaf915967
+O
+src/app/anonymous_functions.clj,8/1/8148d5b01880ea7144470d211e853c2ea157d244
+B
+src/app/reduce.clj,3/7/37f8f784013a6e2b31748d1ea0b5276fca4f96d8
+H
+src/app/immutability.clj,a/3/a3285e698c3ca810b6715e967fa4e94699551be7
+E
+src/app/factorial.clj,a/f/afaf69a124f6fd1690917a6148e117f63fa49334
+C
+src/app/counter.clj,8/e/8e7058ba3865adb48cf7ac6d99cee66d0032cdd2
+A
+src/app/doseq.clj,0/a/0af3b0f4a9a960559103f5216aac429b764e2fd1
