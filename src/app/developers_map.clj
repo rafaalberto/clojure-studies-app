@@ -7,7 +7,15 @@
                  {:name         "Jim"
                   :certificates ["PHP" ".Net" "Kotlin"]}])
 
-(println "Total certificates: " (->> developers
+;option1
+(println "Total certificates:"
+         (reduce +
+                 (map count
+                      (map :certificates developers))))
+
+;option2
+(println "Total certificates:"
+         (->> developers
               (map :certificates)
               (map count)
               (reduce +)))

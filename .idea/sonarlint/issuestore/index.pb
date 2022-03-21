@@ -25,10 +25,6 @@ Q
 !src/app/recur_overload_review.clj,d/9/d9325bc9b264d028c43ed050c9a5ef8bf9e16f6b
 E
 src/app/recursion.clj,d/e/de3dfb548eb1da4113270e1059537ea72dd12f46
-T
-$src/app/composition_transactions.clj,f/d/fd4ae3ee73f2f014cecdba315931618f02e7ae63
-G
-src/app/composition.clj,0/7/076e0151c8ba89d62eb9c8013be8fa07dc701fa9
 M
 src/app/arity_overloading.clj,6/a/6ad128e49b0c72774ffdb50ffc71a89aaf915967
 O
