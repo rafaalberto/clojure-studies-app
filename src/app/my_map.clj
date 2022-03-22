@@ -4,6 +4,7 @@
   (let [first-seq (first sequence)]
     (if (not (nil? first-seq))
       (do (function first-seq)
-          (my-map function (rest sequence))))))
+          (recur function (rest sequence))))))
 
 (my-map println ["Rafael" true "Rosemeire" "José"])
+(my-map println (range 100001))

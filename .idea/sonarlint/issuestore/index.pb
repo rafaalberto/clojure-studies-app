@@ -6,8 +6,6 @@
 ;
 project.clj,5/7/57ca00cf1f5956461c3a9003fcb7b0a3de2c6a31
 D
-src/app/fizzbuzz.clj,8/5/851db4c0bcf4a8f5f82f4ee803ddc3505f954371
-D
 src/app/laziness.clj,2/1/21efa7521da0342f332f89a16e52afe1c56a5e83
 D
 src/app/lazy_seq.clj,b/e/be9554e1d66a0ecab0bad023bcdbd3d035eb184c
@@ -21,20 +19,8 @@ Q
 !src/app/recur_overload_review.clj,d/9/d9325bc9b264d028c43ed050c9a5ef8bf9e16f6b
 E
 src/app/recursion.clj,d/e/de3dfb548eb1da4113270e1059537ea72dd12f46
-M
-src/app/arity_overloading.clj,6/a/6ad128e49b0c72774ffdb50ffc71a89aaf915967
-O
-src/app/anonymous_functions.clj,8/1/8148d5b01880ea7144470d211e853c2ea157d244
-B
-src/app/reduce.clj,3/7/37f8f784013a6e2b31748d1ea0b5276fca4f96d8
 H
 src/app/immutability.clj,a/3/a3285e698c3ca810b6715e967fa4e94699551be7
-E
-src/app/factorial.clj,a/f/afaf69a124f6fd1690917a6148e117f63fa49334
-C
-src/app/counter.clj,8/e/8e7058ba3865adb48cf7ac6d99cee66d0032cdd2
-A
-src/app/doseq.clj,0/a/0af3b0f4a9a960559103f5216aac429b764e2fd1
 J
 src/app/update_inc_dec.clj,b/6/b6ae6dcf30abcd34c9e9bc8d915c53be98003290
 ?
@@ -45,13 +31,5 @@ J
 src/app/map_inside_map.clj,5/c/5c6a793cfed262e498cbba85040e762dfccdafdb
 I
 src/app/destructuring.clj,f/1/f1d122edf52d0f2beba2b7dbc989411f2c50e9d7
-B
-src/app/filter.clj,4/b/4bf2f8768d62f533c240919236a86140847ed1ed
-T
-$src/app/composition_transactions.clj,f/d/fd4ae3ee73f2f014cecdba315931618f02e7ae63
-J
-src/app/developers_map.clj,2/c/2cd1f9305ad33e9aaa55a20bb860f6ba0d10e175
-A
-src/app/grade.clj,2/9/29e9d7de1d79813d4bf685998e5f7443d8dd0e6d
 G
 test/app/grade_test.clj,3/3/3364082d6f04f9ccc2da3b79a95569aa43244c68
