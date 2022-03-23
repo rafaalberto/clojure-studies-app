@@ -25,10 +25,6 @@ J
 src/app/update_inc_dec.clj,b/6/b6ae6dcf30abcd34c9e9bc8d915c53be98003290
 ?
 src/app/map.clj,3/e/3e588acc8e859427cf7f9a34e6a4d2476c430173
-J
-src/app/map_inside_map.clj,5/c/5c6a793cfed262e498cbba85040e762dfccdafdb
-I
-src/app/destructuring.clj,f/1/f1d122edf52d0f2beba2b7dbc989411f2c50e9d7
 G
 test/app/grade_test.clj,3/3/3364082d6f04f9ccc2da3b79a95569aa43244c68
 B
