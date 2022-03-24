@@ -3,8 +3,6 @@
 	.hgignore,3/9/39764dc6adbe1c6e740db8636ab21a5f44f41f59
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-;
-project.clj,5/7/57ca00cf1f5956461c3a9003fcb7b0a3de2c6a31
 D
 src/app/laziness.clj,2/1/21efa7521da0342f332f89a16e52afe1c56a5e83
 D
