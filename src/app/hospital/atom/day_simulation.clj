@@ -1,6 +1,6 @@
-(ns app.hospital.day-simulation
-  (:require [app.hospital.model :as h.model]
-            [app.hospital.logic :as h.logic])
+(ns app.hospital.atom.day-simulation
+  (:require [app.hospital.atom.model :as h.model]
+            [app.hospital.atom.logic :as h.logic])
   (:use [clojure pprint]))
 
 (defn- set-arrival! [hospital person]
@@ -14,7 +14,7 @@
 
 (defn simulate-day []
   (let [hospital (atom (h.model/new-hospital))]
-    ;(dotimes [person 6]
+    ;(dotimes [person 5]
     ;  (start-arrival hospital person))
     (set-arrival! hospital "John")
     (set-arrival! hospital "Mary")

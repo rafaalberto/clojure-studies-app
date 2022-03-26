@@ -1,4 +1,4 @@
-(ns app.hospital.logic)
+(ns app.hospital.atom.logic)
 
 (defn- line-available? [hospital department]
   (-> hospital

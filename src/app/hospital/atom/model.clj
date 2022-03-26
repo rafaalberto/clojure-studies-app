@@ -1,4 +1,4 @@
-(ns app.hospital.model
+(ns app.hospital.atom.model
   (:import (clojure.lang PersistentQueue)))
 
 (def empty-queue PersistentQueue/EMPTY)
