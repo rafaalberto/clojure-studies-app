@@ -15,3 +15,16 @@
 
 (defn attend [hospital department]
   (update hospital department pop))
+
+(defn- next-person
+  "Returns next person from line"
+  [hospital department]
+  (-> hospital
+      department
+      peek))
+
+(defn transfer [hospital from to]
+  (let [person (next-person hospital from)]
+    (-> hospital
+        (attend from)
+        (arrive-at to person))))
