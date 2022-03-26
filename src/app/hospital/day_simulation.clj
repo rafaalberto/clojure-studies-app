@@ -19,8 +19,12 @@
     (set-arrival! hospital "John")
     (set-arrival! hospital "Mary")
     (set-arrival! hospital "Rose")
+    (set-arrival! hospital "Charles")
     (pprint hospital)
     (transfer! hospital :waiting-line :laboratory1)
+    (transfer! hospital :waiting-line :laboratory2)
+    (transfer! hospital :waiting-line :laboratory3)
+    (transfer! hospital :laboratory2 :laboratory3)
     (.start (Thread. (fn [] (Thread/sleep 4000)
                        (pprint hospital))))))
 
