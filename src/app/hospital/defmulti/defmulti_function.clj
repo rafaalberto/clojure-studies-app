@@ -1,4 +1,4 @@
-(ns app.hospital.defmulti.defmulti
+(ns app.hospital.defmulti.defmulti-function
   (:use [clojure pprint]))
 
 (defrecord ParticularPatient [id name status])
