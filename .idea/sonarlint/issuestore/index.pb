@@ -31,3 +31,11 @@ E
 src/app/my_reduce.clj,d/5/d5e6ad5308ba49c7e43d5eb96515d6dca7c94e56
 C
 src/app/my_loop.clj,4/c/4c13fc760602a50196cf45f6d9d5e8805e679b56
+;
+project.clj,5/7/57ca00cf1f5956461c3a9003fcb7b0a3de2c6a31
+U
+%src/app/hospital/schema/predicate.clj,1/e/1e2de921bc6beeb6dd4bd16178255820fba46890
+V
+&src/app/hospital/schema/own_schema.clj,6/9/698583a596004e7972ee1fe8cec24306adc655a8
+^
+.src/app/hospital/schema/validate_arguments.clj,4/b/4bb524a8b39618d9c893d269cc3cc98f90831223
