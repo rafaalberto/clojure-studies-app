@@ -44,16 +44,16 @@
 (deftest transfer-test
   (testing "Accept new patient if there is vacancy"
 
-    (let [hospital {:waiting-line (conj h.model/empty-queue 7)
+    (let [hospital {:waiting-line (conj h.model/empty-queue "7")
                     :x-ray        h.model/empty-queue}]
       (is (= {:waiting-line []
-              :x-ray        [7]}
+              :x-ray        ["7"]}
              (transfer hospital :waiting-line :x-ray))))
 
-    (let [hospital {:waiting-line (conj h.model/empty-queue 10 17)
-                    :x-ray        (conj h.model/empty-queue 12)}]
-      (is (= {:waiting-line [17]
-              :x-ray        [12 10]}
+    (let [hospital {:waiting-line (conj h.model/empty-queue "10" "17")
+                    :x-ray        (conj h.model/empty-queue "12")}]
+      (is (= {:waiting-line ["17"]
+              :x-ray        ["12" "10"]}
              (transfer hospital :waiting-line :x-ray)))))
 
   (testing "Reject new patient if there is no vacancy"
@@ -63,4 +63,12 @@
                    (transfer hospital-full :waiting-line :x-ray)))))
 
   (testing "No transfer without hospital"
-    (is (thrown? ExceptionInfo (transfer nil :waiting-line :x-ray)))))
+    (is (thrown? ExceptionInfo (transfer nil :waiting-line :x-ray))))
+
+  (testing "Mandatory conditions"
+    (let [hospital {:waiting-line (conj h.model/empty-queue "5")
+                    :x-ray        (conj h.model/empty-queue "1" "2" "3")}]
+      (is (thrown? AssertionError
+                   (transfer hospital :not-exists :x-ray)))
+      (is (thrown? AssertionError
+                   (transfer hospital :waiting-line :not-exists))))))
