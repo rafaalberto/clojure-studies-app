@@ -23,8 +23,6 @@ J
 src/app/update_inc_dec.clj,b/6/b6ae6dcf30abcd34c9e9bc8d915c53be98003290
 ?
 src/app/map.clj,3/e/3e588acc8e859427cf7f9a34e6a4d2476c430173
-G
-test/app/grade_test.clj,3/3/3364082d6f04f9ccc2da3b79a95569aa43244c68
 B
 src/app/my_map.clj,1/5/15c358199eb9da86bf2460e93114f8fb3f83aa9b
 E
