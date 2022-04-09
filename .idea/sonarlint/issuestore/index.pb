@@ -15,8 +15,6 @@ F
 src/app/mutability.clj,d/3/d393887561ee7bfa7b36086b68d71a632948115a
 Q
 !src/app/recur_overload_review.clj,d/9/d9325bc9b264d028c43ed050c9a5ef8bf9e16f6b
-E
-src/app/recursion.clj,d/e/de3dfb548eb1da4113270e1059537ea72dd12f46
 H
 src/app/immutability.clj,a/3/a3285e698c3ca810b6715e967fa4e94699551be7
 J
