@@ -19,8 +19,6 @@ H
 src/app/immutability.clj,a/3/a3285e698c3ca810b6715e967fa4e94699551be7
 J
 src/app/update_inc_dec.clj,b/6/b6ae6dcf30abcd34c9e9bc8d915c53be98003290
-?
-src/app/map.clj,3/e/3e588acc8e859427cf7f9a34e6a4d2476c430173
 B
 src/app/my_map.clj,1/5/15c358199eb9da86bf2460e93114f8fb3f83aa9b
 E
@@ -33,3 +31,11 @@ V
 &src/app/hospital/schema/own_schema.clj,6/9/698583a596004e7972ee1fe8cec24306adc655a8
 ^
 .src/app/hospital/schema/validate_arguments.clj,4/b/4bb524a8b39618d9c893d269cc3cc98f90831223
+C
+src/app/flatten.clj,e/7/e7c335301f694d6fa4e108b7ca119de8362d9ed0
+O
+src/app/anonymous_functions.clj,8/1/8148d5b01880ea7144470d211e853c2ea157d244
+W
+'src/app/hospital/schema/dynamic_map.clj,2/e/2e4286273463b6d45fd56ede698caa8d4ca3ef7b
+?
+src/app/map.clj,3/e/3e588acc8e859427cf7f9a34e6a4d2476c430173
