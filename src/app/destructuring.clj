@@ -14,9 +14,3 @@
     (str "Joe Score: " joe-score)))
 
 (println (print-scores))
-
-(def engineers [{:name "Mary" :age 23}
-                {:name "John" :age 21}
-                {:name "Jonas" :age 45}])
-
-(map #(println "Name: " (:name %)) engineers)
